@@ -23,7 +23,7 @@
     'depends': ['base'],
 
     # always loaded
-    'data': [
+    'data': [],
         # 'security/ir.model.access.csv',    ],
     # only loaded in demonstration mode
     'demo': [
