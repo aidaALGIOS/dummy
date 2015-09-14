@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- MENU ITEMS -->
+
+		<!-- top level menu: no parent -->
+		<menuitem id="main_sat_menu" name="SAT" />
+		<!-- A first level in the left side menu is needed before using action= 
+			attribute -->
+		<menuitem id="sat_menu" name="SAT" parent="main_sat_menu" />
+		<menuitem id="equipments_menu" name="Equipments" parent="sat_menu"
+			action="equipment_list_action" />
+		<menuitem id="product_menu" name="Products" parent="sat_menu"
+			action="product_list_action" />
+		<menuitem id="sat_configuration_menu" name="SAT" parent="base.menu_config"
+			action="sat_config_action" />
+	</data>
+</openerp>

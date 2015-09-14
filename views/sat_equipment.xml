@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="equipment_form">
+			<field name="name">equipment_form_view</field>
+			<field name="model">sat.equipment</field>
+			<field name="arch" type="xml">
+
+				<form string="Equipment" version="7.0">
+					<sheet>
+						<h1>
+							<field name="name" placeholder="Equipment Title" />
+						</h1>
+						<group>
+							<field name="description" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+
+		<!-- WINDOW ACTIONS -->
+
+		<record model="ir.actions.act_window" id="equipment_list_action">
+			<field name="name">Equipments</field>
+			<field name="res_model">sat.equipment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Create the first equipment</p>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="product_list_action">
+			<field name="name">Products</field>
+			<field name="res_model">sat.product</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Create the first product</p>
+			</field>
+		</record>
+
+
+	</data>
+</openerp>
+
