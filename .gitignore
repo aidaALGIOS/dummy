@@ -55,10 +55,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# Eclipse
-.project
-.pydevproject
-
-# gedit
-*~
