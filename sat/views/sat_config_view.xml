@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="sat_config_view" model="ir.ui.view">
+            <field name="name">sat configuration</field>
+            <field name="model">sat.config.settings</field>
+            <field name="arch" type="xml">
+                <form string="SAT configuration" class="oe_form_configuration">
+                    <header>
+                        <button string="Apply" type="object" name="execute" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" type="object" name="cancel" class="oe_link"/>
+                    </header>
+                    <group string="SAT">
+                        <label for="id" string="Manage"/>
+                        <div>
+                            <div>
+                                <field name="group_manage_equipments"/>
+                                <label for="group_manage_equipments"/>
+                            </div>
+                            <div>
+                                <field name="group_manage_contracts"/>
+                                <label for="group_manage_contracts"/>
+                            </div>
+                        </div>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="sat_config_action" model="ir.actions.act_window">
+            <field name="name">Configure SAT</field>
+            <field name="res_model">sat.config.settings</field>
+            <field name="view_id" ref="sat_config_view"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+
+        <menuitem id="sat_config_menu" name="SAT" parent="base.menu_config" sequence="50" action="sat_config_action"/>
+    </data>
+</openerp>
