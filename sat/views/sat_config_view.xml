@@ -11,8 +11,8 @@
                         or
                         <button string="Cancel" type="object" name="cancel" class="oe_link"/>
                     </header>
-                    <group string="SAT">
-                        <label for="id" string="Manage"/>
+                    <group string="SAT Management">
+                        <label for="id" string="Configuration"/>
                         <div>
                             <div>
                                 <field name="group_manage_equipments"/>
@@ -36,6 +36,6 @@
             <field name="target">inline</field>
         </record>
 
-        <menuitem id="sat_config_menu" name="SAT" parent="base.menu_config" sequence="50" action="sat_config_action"/>
+        <menuitem id="sat_config_menu" name="SAT" parent="base.menu_config" sequence="99" action="sat_config_action"/>
     </data>
 </openerp>

@@ -29,13 +29,15 @@ class SatConfiguration(models.TransientModel):
     group_manage_equipments = fields.Boolean(
         string="Manage equipments",
         group='base.group_user',
-        implied_group='sat.group_manage_equipments'
+        implied_group='sat.group_manage_equipments',
+        help="This allows you to check which products are contained in your customer installations."
     )
 
     group_manage_contracts = fields.Boolean(
         string="Manage contracts",
         group='base.group_user',
-        implied_group='sat.group_manage_contracts'
+        implied_group='sat.group_manage_contracts',
+        help="This allows you to define special conditions to manage and invoice your S.A.T tasks."
     )
 
     @api.one
