@@ -37,11 +37,13 @@ class SatConfiguration(models.TransientModel):
         string="Manage contracts",
         group='base.group_user',
         implied_group='sat.group_manage_contracts',
-        help="This allows you to define special conditions to manage and invoice your S.A.T tasks."
+        help="This allows you to define special conditions to manage and invoice your SAT tasks."
     )
 
     @api.one
     def set_company_values(self):
         company = self.env.user.company_id
-        company.manage_equipments = self.group_manage_equipments
-        company.manage_contracts = self.group_manage_contracts
+        company.write({
+            'manage_equipments': self.group_manage_equipments,
+            'manage_contracts': self.group_manage_contracts
+        })
