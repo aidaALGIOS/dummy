@@ -22,6 +22,18 @@
                                 <field name="group_manage_contracts"/>
                                 <label for="group_manage_contracts"/>
                             </div>
+                            <div>
+                                <label for="work_time_rounding"/>
+                                <field name="work_time_rounding" class="oe_inline"/>
+                            </div>
+                            <div>
+                                <label for="invoice_time_rounding"/>
+                                <field name="invoice_time_rounding" class="oe_inline"/>
+                            </div>
+                            <div>
+                                <field name="register_work_time"/>
+                                <label for="register_work_time"/>
+                            </div>
                         </div>
                     </group>
                 </form>
