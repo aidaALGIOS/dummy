@@ -27,6 +27,7 @@
         'security/sat_security.xml',
         'security/ir.model.access.csv',
         'views/sat_config_view.xml',
+        'views/sat_menu.xml',
     ],
 
     # only loaded in demonstration mode
