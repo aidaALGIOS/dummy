@@ -10,6 +10,6 @@ class Brand(models.Model):
 
     name = fields.Char(size=64, required=True)
     description = fields.Text(help="Feel free to explain the Brand")
-    active = fields.Boolean(default=True, help="If the active field is set to False, it will allow you to hide the payment term without removing it.")
+    active = fields.Boolean(default=True, help="If the active field is set to False, it will allow you to hide the brand without removing it.")
 
     _sql_constraints = [('sat_brand_unique_name', 'UNIQUE(name)','The brand name must be unique!')]

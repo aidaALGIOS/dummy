@@ -6,15 +6,15 @@
             <field name="name">sat.brand.form</field>
             <field name="model">sat.brand</field>
             <field name="arch" type="xml">
-                <form string="Course Form">
+                <form string="Brand Form">
                     <sheet>
                         <div>
                             <label for="name"/>
                             <field name="name"/>
                             <label for="description"/>
                             <field name="description"/>
-                            <label for="active"/>
                             <field name="active"/>
+                            <label for="active"/>
                         </div>
                     </sheet>
                 </form>
@@ -26,7 +26,7 @@
             <field name="name">sat.brand.tree</field>
             <field name="model">sat.brand</field>
             <field name="arch" type="xml">
-                <tree string="Course Form">
+                <tree string="Brand Tree">
                     <field name="name"/>
                     <field name="description"/>
                 </tree>
