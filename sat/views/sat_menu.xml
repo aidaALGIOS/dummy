@@ -10,7 +10,7 @@
 
         <menuitem id="product_menu" name="Products" parent="equipment_group_menu" sequence="10" action="sat_config_action"/>
         <menuitem id="equipment_menu" name="Equipments" parent="equipment_group_menu" sequence="20" action="sat_config_action"/>
-        <menuitem id="brand_menu" name="Brands" parent="equipment_group_menu" sequence="30" action="sat_config_action"/>
+        <menuitem id="brand_menu" name="Brands" parent="equipment_group_menu" sequence="30" action="brand_list_action"/>
 
         <!-- Ticketing Group -->
         <menuitem id="ticket_group_menu" name="Ticketing" parent="sat_top_menu" sequence="20"/>
