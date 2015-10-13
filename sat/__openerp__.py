@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','account'],
 
     # always loaded
     'data': [
@@ -29,6 +29,7 @@
         'views/brand_view.xml',
         'views/sat_config_view.xml',
         'views/sat_menu.xml',
+        'data/sat_data.xml'
     ],
 
     # only loaded in demonstration mode

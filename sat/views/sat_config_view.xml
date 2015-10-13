@@ -5,13 +5,13 @@
             <field name="name">sat configuration</field>
             <field name="model">sat.config.settings</field>
             <field name="arch" type="xml">
-                <form string="SAT configuration" class="oe_form_configuration">
+                <form string="Support configuration" class="oe_form_configuration">
                     <header>
                         <button string="Apply" type="object" name="execute" class="oe_highlight"/>
                         or
                         <button string="Cancel" type="object" name="cancel" class="oe_link"/>
                     </header>
-                    <group string="SAT Management">
+                    <group string="Support Management">
                         <label for="id" string="Configuration"/>
                         <div>
                             <div>
@@ -34,6 +34,10 @@
                                 <field name="register_work_time"/>
                                 <label for="register_work_time"/>
                             </div>
+                            <div>
+                                <label for="support_analytic_root_id"/>
+                                <field name="support_analytic_root_id" class="oe_inline"/>
+                            </div>
                         </div>
                     </group>
                 </form>
@@ -41,13 +45,13 @@
         </record>
 
         <record id="sat_config_action" model="ir.actions.act_window">
-            <field name="name">Configure SAT</field>
+            <field name="name">Support configuration</field>
             <field name="res_model">sat.config.settings</field>
             <field name="view_id" ref="sat_config_view"/>
             <field name="view_mode">form</field>
             <field name="target">inline</field>
         </record>
 
-        <menuitem id="sat_config_menu" name="SAT" parent="base.menu_config" sequence="99" action="sat_config_action"/>
+        <menuitem id="sat_config_menu" name="Support" parent="base.menu_config" sequence="99" action="sat_config_action"/>
     </data>
 </openerp>
