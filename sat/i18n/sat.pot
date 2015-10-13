@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-08 08:46+0000\n"
-"PO-Revision-Date: 2015-10-08 08:46+0000\n"
+"POT-Creation-Date: 2015-10-13 10:11+0000\n"
+"PO-Revision-Date: 2015-10-13 10:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,11 @@ msgstr ""
 #. module: sat
 #: field:sat.brand,active:0
 msgid "Active"
+msgstr ""
+
+#. module: sat
+#: field:sat.config.settings,support_analytic_root_id:0
+msgid "Analytic root for Support"
 msgstr ""
 
 #. module: sat
@@ -75,11 +80,6 @@ msgstr ""
 #: model:ir.ui.menu,name:sat.config_group_menu
 #: view:sat.config.settings:sat.sat_config_view
 msgid "Configuration"
-msgstr ""
-
-#. module: sat
-#: model:ir.actions.act_window,name:sat.sat_config_action
-msgid "Configure SAT"
 msgstr ""
 
 #. module: sat
@@ -163,7 +163,7 @@ msgid "Invoicing time rounding"
 msgstr ""
 
 #. module: sat
-#: code:addons/sat/models/sat_config.py:50
+#: code:addons/sat/models/sat_config.py:45
 #, python-format
 msgid "Invoicing time rounding must be greater than 0"
 msgstr ""
@@ -196,7 +196,7 @@ msgstr ""
 
 #. module: sat
 #: help:sat.config.settings,invoice_time_rounding:0
-msgid "Minimum invoicing time unit (minutes). Every invoiceable duration will be rounded before invoicing. If you change it, every registered invoice lines will remain unchanged. You can change the value in any contracts."
+msgid "Minimum invoicing time unit (minutes). Total invoiceable duration will be rounded before invoicing. If you change it, every registered invoice lines will remain unchanged. You can change the value in any contracts."
 msgstr ""
 
 #. module: sat
@@ -230,19 +230,34 @@ msgid "Review"
 msgstr ""
 
 #. module: sat
-#: model:ir.ui.menu,name:sat.sat_config_menu
 #: model:ir.ui.menu,name:sat.sat_top_menu
 msgid "SAT"
 msgstr ""
 
 #. module: sat
-#: view:sat.config.settings:sat.sat_config_view
-msgid "SAT Management"
+#: help:sat.config.settings,support_analytic_root_id:0
+msgid "Select which account will contain every support projects."
+msgstr ""
+
+#. module: sat
+#: model:ir.ui.menu,name:sat.sat_config_menu
+msgid "Support"
 msgstr ""
 
 #. module: sat
 #: view:sat.config.settings:sat.sat_config_view
-msgid "SAT configuration"
+msgid "Support Management"
+msgstr ""
+
+#. module: sat
+#: field:res.company,support_analytic_root_id:0
+msgid "Support analytic root id"
+msgstr ""
+
+#. module: sat
+#: model:ir.actions.act_window,name:sat.sat_config_action
+#: view:sat.config.settings:sat.sat_config_view
+msgid "Support configuration"
 msgstr ""
 
 #. module: sat
@@ -262,7 +277,7 @@ msgstr ""
 
 #. module: sat
 #: help:sat.config.settings,group_manage_contracts:0
-msgid "This allows you to define special conditions to manage and invoice your SAT tasks."
+msgid "This allows you to define special conditions to manage and invoice your Support tasks."
 msgstr ""
 
 #. module: sat
@@ -291,7 +306,7 @@ msgid "Working time rounding"
 msgstr ""
 
 #. module: sat
-#: code:addons/sat/models/sat_config.py:48
+#: code:addons/sat/models/sat_config.py:43
 #, python-format
 msgid "Working time rounding must be greater than 0"
 msgstr ""

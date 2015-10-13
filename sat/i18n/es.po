@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-08 08:46+0000\n"
-"PO-Revision-Date: 2015-10-08 08:46+0000\n"
+"POT-Creation-Date: 2015-10-13 10:11+0000\n"
+"PO-Revision-Date: 2015-10-13 10:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,6 +31,11 @@ msgstr "Tipos de Acciones"
 #: field:sat.brand,active:0
 msgid "Active"
 msgstr "Activo"
+
+#. module: sat
+#: field:sat.config.settings,support_analytic_root_id:0
+msgid "Analytic root for Support"
+msgstr "Cuenta raíz para la analítica de SAT"
 
 #. module: sat
 #: view:sat.config.settings:sat.sat_config_view
@@ -77,11 +82,6 @@ msgstr "Compañías"
 #: view:sat.config.settings:sat.sat_config_view
 msgid "Configuration"
 msgstr "Configuración"
-
-#. module: sat
-#: model:ir.actions.act_window,name:sat.sat_config_action
-msgid "Configure SAT"
-msgstr "Configurar SAT"
 
 #. module: sat
 #: model:ir.ui.menu,name:sat.contract_type_menu
@@ -156,7 +156,7 @@ msgstr "Redondeo del tiempo facturable"
 #. module: sat
 #: model:ir.ui.menu,name:sat.invoice_group_menu
 msgid "Invoicing"
-msgstr "Facturar"
+msgstr "Facturación"
 
 #. module: sat
 #: field:sat.config.settings,invoice_time_rounding:0
@@ -164,7 +164,7 @@ msgid "Invoicing time rounding"
 msgstr "Redondeo del tiempo facturable"
 
 #. module: sat
-#: code:addons/sat/models/sat_config.py:50
+#: code:addons/sat/models/sat_config.py:45
 #, python-format
 msgid "Invoicing time rounding must be greater than 0"
 msgstr "Redondeo del tiempo facturable debe ser mayor que 0"
@@ -197,8 +197,8 @@ msgstr "Gestionar equipos"
 
 #. module: sat
 #: help:sat.config.settings,invoice_time_rounding:0
-msgid "Minimum invoicing time unit (minutes). Every invoiceable duration will be rounded before invoicing. If you change it, every registered invoice lines will remain unchanged. You can change the value in any contracts."
-msgstr "Mínima unidad de facturación de tiempo, en minutos. Se usa para redondear la duración de las líneas de las facturas. Si se cambia, las facturas que ya existen no se modifican. Se puede indicar un valor distinto por contrato."
+msgid "Minimum invoicing time unit (minutes). Total invoiceable duration will be rounded before invoicing. If you change it, every registered invoice lines will remain unchanged. You can change the value in any contracts."
+msgstr "Mínima unidad de facturación de tiempo, en minutos. Se usa para redondear la duración total de las líneas de las facturas. Si se cambia, las facturas que ya existen no se modifican. Se puede indicar un valor distinto por contrato."
 
 #. module: sat
 #: help:sat.config.settings,work_time_rounding:0
@@ -218,7 +218,7 @@ msgstr "Productos"
 #. module: sat
 #: field:res.company,register_work_time:0
 msgid "Register work time"
-msgstr "Register working time in time slots"
+msgstr "Registar las horas de comienzo y de fin en las imputaciones"
 
 #. module: sat
 #: field:sat.config.settings,register_work_time:0
@@ -231,20 +231,35 @@ msgid "Review"
 msgstr "Revisar Facturas"
 
 #. module: sat
-#: model:ir.ui.menu,name:sat.sat_config_menu
 #: model:ir.ui.menu,name:sat.sat_top_menu
 msgid "SAT"
 msgstr "SAT"
 
 #. module: sat
-#: view:sat.config.settings:sat.sat_config_view
-msgid "SAT Management"
-msgstr "SAT"
+#: help:sat.config.settings,support_analytic_root_id:0
+msgid "Select which account will contain every support projects."
+msgstr "Seleccione qué cuenta de analítica quiere que sea el contenedor de los proyectos que se generen en SAT."
+
+#. module: sat
+#: model:ir.ui.menu,name:sat.sat_config_menu
+msgid "Support"
+msgstr "Soporte"
 
 #. module: sat
 #: view:sat.config.settings:sat.sat_config_view
-msgid "SAT configuration"
-msgstr "Configuración SAT"
+msgid "Support Management"
+msgstr "Soporte"
+
+#. module: sat
+#: field:res.company,support_analytic_root_id:0
+msgid "Support analytic root id"
+msgstr "Cuenta raíz para la analítica de SAT"
+
+#. module: sat
+#: model:ir.actions.act_window,name:sat.sat_config_action
+#: view:sat.config.settings:sat.sat_config_view
+msgid "Support configuration"
+msgstr "Configuración de soporte"
 
 #. module: sat
 #: model:ir.ui.menu,name:sat.template_menu
@@ -263,7 +278,7 @@ msgstr "Esto permite validar qué productos forman parte de las instalaciones de
 
 #. module: sat
 #: help:sat.config.settings,group_manage_contracts:0
-msgid "This allows you to define special conditions to manage and invoice your SAT tasks."
+msgid "This allows you to define special conditions to manage and invoice your Support tasks."
 msgstr "Esto permite definir condiciones especiales para la gestión y la facturación de las tareas de SAT."
 
 #. module: sat
@@ -292,7 +307,7 @@ msgid "Working time rounding"
 msgstr "Redondeo del tiempo de trabajo"
 
 #. module: sat
-#: code:addons/sat/models/sat_config.py:48
+#: code:addons/sat/models/sat_config.py:43
 #, python-format
 msgid "Working time rounding must be greater than 0"
 msgstr "Redondeo del tiempo de trabajo debe ser mayor que 0"
