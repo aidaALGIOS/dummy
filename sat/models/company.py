@@ -11,3 +11,4 @@ class Company(models.Model):
     work_time_rounding = fields.Integer(default=5)
     invoice_time_rounding = fields.Integer(default=15)
     register_work_time = fields.Boolean()
+    support_analytic_root_id = fields.Many2one('account.analytic.account')

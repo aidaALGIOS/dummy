@@ -3,3 +3,4 @@
 
 from . import sat_config
 from . import company
+from . import brand
