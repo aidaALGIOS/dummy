@@ -33,7 +33,7 @@ msgstr "Active"
 #: model:ir.actions.act_window,name:openacademy.launch_session_wizard
 #: view:openacademy.wizard:openacademy.wizard_form_view
 msgid "Add Attendees"
-msgstr "Add Attendees"
+msgstr "Añadir asistentes"
 
 #. module: openacademy
 #: field:res.partner,session_ids:0
@@ -44,28 +44,28 @@ msgstr "Attended Sessions"
 #: field:openacademy.session,attendee_ids:0
 #: field:openacademy.wizard,attendee_ids:0
 msgid "Attendees"
-msgstr "Attendees"
+msgstr "Asistentes"
 
 #. module: openacademy
 #: view:board.board:openacademy.board_session_form
 #: model:ir.actions.act_window,name:openacademy.act_session_graph
 msgid "Attendees by course"
-msgstr "Attendees by course"
+msgstr "Asistentes por curso"
 
 #. module: openacademy
 #: field:openacademy.session,attendees_count:0
 msgid "Attendees count"
-msgstr "Attendees count"
+msgstr "Total asistentes"
 
 #. module: openacademy
 #: view:website:openacademy.report_session_view
 msgid "Attendees:"
-msgstr "Attendees:"
+msgstr "Asistentes:"
 
 #. module: openacademy
 #: view:openacademy.wizard:openacademy.wizard_form_view
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Cancelar"
 
 #. module: openacademy
 #: field:openacademy.session,color:0
@@ -80,7 +80,7 @@ msgstr "Configuración"
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_form_view
 msgid "Confirm"
-msgstr "Confirm"
+msgstr "Confirmar"
 
 #. module: openacademy
 #: selection:openacademy.session,state:0
@@ -91,13 +91,13 @@ msgstr "Confirmado"
 #: model:ir.actions.act_window,name:openacademy.contact_cat_list_action
 #: model:ir.ui.menu,name:openacademy.contact_cat_menu
 msgid "Contact Tags"
-msgstr "Contact Tags"
+msgstr "Etiquetas de contacto"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.contact_list_action
 #: model:ir.ui.menu,name:openacademy.contact_menu
 msgid "Contacts"
-msgstr "Contacts"
+msgstr "Contactos"
 
 #. module: openacademy
 #: code:addons/openacademy/models.py:33
