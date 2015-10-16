@@ -159,7 +159,7 @@ msgstr "Creado en"
 #. module: openacademy
 #: view:openacademy.session:openacademy.view_openacad_session_kanban
 msgid "Delete"
-msgstr "Delete"
+msgstr "Borrar"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
