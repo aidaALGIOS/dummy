@@ -146,7 +146,7 @@ msgstr "Courses"
 #: field:openacademy.session,create_uid:0
 #: field:openacademy.wizard,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creado por"
 
 #. module: openacademy
 #: field:openacademy.course,create_date:0
@@ -154,7 +154,7 @@ msgstr "Created by"
 #: field:openacademy.session,create_date:0
 #: field:openacademy.wizard,create_date:0
 msgid "Created on"
-msgstr "Created on"
+msgstr "Creado en"
 
 #. module: openacademy
 #: view:openacademy.session:openacademy.view_openacad_session_kanban
