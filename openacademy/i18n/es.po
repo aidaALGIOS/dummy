@@ -166,7 +166,7 @@ msgstr "Delete"
 #: field:openacademy.course,description:0
 #: field:openacademy.openacademy,description:0
 msgid "Description"
-msgstr "Description"
+msgstr "Descripcion"
 
 #. module: openacademy
 #: selection:openacademy.session,state:0
