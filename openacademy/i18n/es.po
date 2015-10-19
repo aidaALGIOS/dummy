@@ -27,7 +27,7 @@ msgstr "<p class=\"oe_view_nocontent_create\">Create the first course\n"
 #. module: openacademy
 #: field:openacademy.session,active:0
 msgid "Active"
-msgstr "Active"
+msgstr "Activa"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.launch_session_wizard
@@ -38,7 +38,7 @@ msgstr "Añadir asistentes"
 #. module: openacademy
 #: field:res.partner,session_ids:0
 msgid "Attended Sessions"
-msgstr "Attended Sessions"
+msgstr "Sessiones Asistidas"
 
 #. module: openacademy
 #: field:openacademy.session,attendee_ids:0
