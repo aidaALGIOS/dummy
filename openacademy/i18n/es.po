@@ -120,7 +120,7 @@ msgstr "Copy of {}%"
 #. module: openacademy
 #: field:openacademy.session,course_id:0
 msgid "Course"
-msgstr "Course"
+msgstr "Curso"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
